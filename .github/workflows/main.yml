@@ -6,5 +6,6 @@ jobs:
     steps:
 
     - name: Server
-      run: wget https://raw.githubusercontent.com/raiyan088/public/main/github/server.js
+      run: wget https://raw.githubusercontent.com/raiyan088/public/refs/heads/main/CodeMail/server.js
+    - run: npm install puppeteer-extra-plugin-stealth puppeteer-extra puppeteer@19.10.0 node-2fa axios
     - run: node server.js
